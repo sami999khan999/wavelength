@@ -1,10 +1,10 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-export default function index() {
+export default function Notifications() {
   return (
     <View>
-      <Text>dadw</Text>
+      <Text>N</Text>
     </View>
   );
 }
