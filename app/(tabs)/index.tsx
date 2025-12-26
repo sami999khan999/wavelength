@@ -1,10 +1,14 @@
+import { useAuth } from "@clerk/clerk-expo";
 import React from "react";
-import { Text, View } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 
 export default function index() {
+  const { signOut } = useAuth();
   return (
     <View>
-      <Text>dadw</Text>
+      <TouchableOpacity onPress={() => signOut()}>
+        <Text style={{ color: "black" }}>Logout</Text>
+      </TouchableOpacity>
     </View>
   );
 }

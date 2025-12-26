@@ -1,13 +1,16 @@
+import InitialLayout from "@/components/InitialLayout";
 import { COLORS } from "@/constants/theme";
-import { Stack } from "expo-router";
+import ClerkConvexProvider from "@/providers/clerkConvexProvider";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 
 export default function RootLayout() {
   return (
-    <SafeAreaProvider>
-      <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.background }}>
-        <Stack screenOptions={{ headerShown: false }} />
-      </SafeAreaView>
-    </SafeAreaProvider>
+    <ClerkConvexProvider>
+      <SafeAreaProvider>
+        <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.background }}>
+          <InitialLayout />
+        </SafeAreaView>
+      </SafeAreaProvider>
+    </ClerkConvexProvider>
   );
 }
