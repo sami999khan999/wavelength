@@ -23,9 +23,8 @@ export const styles = StyleSheet.create({
   },
   appName: {
     fontSize: 42,
-    fontWeight: "700",
+    fontFamily: "JetBrainsMono-Medium",
     color: COLORS.primary,
-    letterSpacing: 0.5,
     marginBottom: 8,
   },
   tagline: {
@@ -87,6 +86,7 @@ export const styles = StyleSheet.create({
     textAlign: "center",
     fontSize: 12,
     color: COLORS.grey,
+    letterSpacing: 0.6,
     maxWidth: 240,
   },
 });

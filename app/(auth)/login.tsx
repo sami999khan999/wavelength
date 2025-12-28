@@ -28,7 +28,7 @@ export default function Login() {
       }
 
       if (err.code === "user_cancelled") {
-        console.log("User cancelled SSO");
+        console.error("User cancelled SSO");
       }
     }
   };
@@ -39,7 +39,7 @@ export default function Login() {
         <View style={styles.logoContainer}>
           <Ionicons name="leaf-outline" size={32} color={COLORS.primary} />
         </View>
-        <Text style={styles.appName}>wavelength</Text>
+        <Text style={styles.appName}>Wavelength</Text>
         <Text style={styles.tagline}>The best way to manage your time</Text>
       </View>
 

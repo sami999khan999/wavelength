@@ -19,5 +19,12 @@ export default function InitialLayout() {
 
   if (!isLoaded) return null;
 
-  return <Stack screenOptions={{ headerShown: false }} />;
+  return (
+    <Stack
+      screenOptions={{
+        headerShown: false,
+        contentStyle: { backgroundColor: "black" },
+      }}
+    />
+  );
 }

@@ -59,7 +59,7 @@ http.route({
           username: email.split("@")[0],
         });
       } catch (error) {
-        console.log("Error creating user:", error);
+        console.error("Error creating user:", error);
         return new Response("Error creating user", { status: 500 });
       }
     }
