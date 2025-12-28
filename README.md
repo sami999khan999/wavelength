@@ -1,50 +1,156 @@
-# Welcome to your Expo app 👋
+# Wavelength
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+> A modern social media mobile application for sharing visual content and connecting with others through a seamless, intuitive interface.
 
-## Get started
+Built with React Native, Expo, and powered by real-time technology.
 
-1. Install dependencies
+---
+
+## ✨ Features
+
+- 🔐 **User Authentication** - Secure authentication powered by Clerk
+- 📸 **Post Creation** - Share photos with captions using intuitive image picker
+- 📰 **Social Feed** - Browse and interact with posts from other users
+- 🔖 **Bookmarks** - Save and organize your favorite content
+- 🔔 **Notifications** - Stay updated with real-time notifications
+- 👤 **User Profiles** - Manage your personal profile and view others
+- 💬 **Comments** - Engage with the community through commenting
+
+---
+
+## 🛠️ Tech Stack
+
+| Category             | Technology                                             |
+| -------------------- | ------------------------------------------------------ |
+| **Frontend**         | React Native with Expo Router                          |
+| **Authentication**   | [Clerk](https://clerk.com/)                            |
+| **Backend**          | [Convex](https://www.convex.dev/) (real-time database) |
+| **UI Components**    | Custom components with Tailwind-inspired styling       |
+| **Navigation**       | Expo Router with typed routes                          |
+| **State Management** | React hooks and Convex mutations                       |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (v16 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Expo CLI](https://docs.expo.dev/get-started/installation/)
+- [Expo Go](https://expo.dev/client) app on your mobile device
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/yourusername/wavelength.git
+   cd wavelength
+   ```
+
+2. **Install dependencies**
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. **Configure environment variables**
 
-   ```bash
-   npx expo start
+   Create a `.env` file in the root directory:
+
+   ```env
+   EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
+   EXPO_PUBLIC_CONVEX_URL=your_convex_url
    ```
 
-In the output, you'll find options to open the app in a
+4. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+### Run on Platform
 
 ```bash
-npm run reset-project
+# iOS
+npm run ios
+
+# Android
+npm run android
+
+# Web
+npm run web
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 📂 Project Structure
 
-To learn more about developing your project with Expo, look at the following resources:
+```
+wavelength/
+├── app/          # Main application screens and navigation
+├── components/   # Reusable UI components
+├── convex/       # Backend functions and database schema
+├── constants/    # Theme colors and configuration
+├── styles/       # Component-specific styling
+├── providers/    # Context providers
+└── types/        # TypeScript type definitions
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+---
 
-## Join the community
+## 🎯 Key Highlights
 
-Join our community of developers creating universal apps.
+### Cross-Platform Support
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Runs seamlessly on iOS, Android, and Web platforms from a single codebase.
+
+### Real-Time Synchronization
+
+All data updates are synchronized in real-time across all connected clients powered by Convex.
+
+### Secure Authentication
+
+Enterprise-grade authentication with Clerk supporting multiple sign-in methods.
+
+### Type-Safe Development
+
+Full TypeScript support for code reliability and enhanced developer experience.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Here's how you can help:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📬 Contact
+
+**Questions or feedback?**
+
+- 📧 Email: your.email@example.com
+- 🐙 GitHub: [@yourusername](https://github.com/yourusername)
+- 🔗 Project: [github.com/yourusername/wavelength](https://github.com/yourusername/wavelength)
+
+---
+
+<div align="center">
+
+**Built with ❤️ using React Native and Expo**
+
+[⬆ back to top](#wavelength)
+
+</div>
